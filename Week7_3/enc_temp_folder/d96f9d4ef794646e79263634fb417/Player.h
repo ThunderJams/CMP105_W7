@@ -10,10 +10,12 @@ public:
 	~Player();
 
 	void handleInput(float dt);
+	void update(float dt);
+	Bullet* spawn(sf::Vector2f pos);
 	Bullet* getBullet() {
-		return &bullet;
+		return bullet;
 	};
 
-private: // added a colon here
-	Bullet bullet;
+private:
+	Bullet* bullet;
 };
