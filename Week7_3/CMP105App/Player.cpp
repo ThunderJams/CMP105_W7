@@ -29,5 +29,7 @@ void Player::handleInput(float dt)
 
 void Player::update(float dt) 
 {
+	Bullet bullet1;
+	bullet = &bullet1;
 	bullet->update(dt);
 }
